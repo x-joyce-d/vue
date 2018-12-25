@@ -1,11 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-    <p>This is my page</p>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<title>My test page</title>
+	<style>
+		body {
+			width: 90%;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		p {
+			line-height: 2;
+			word-spacing: 0.1rem;
+		}
+
+		img {
+			float: left;
+			margin-right: 30px;
+			/* 脱离 正常文档流，吸附到其父容器左边*/
+			/*  在正常布局中，位于该浮动元素之下的内容，此时会围绕着浮动元素，填满其右侧空间*/
+			/* float: right;
+			margin-left: 30px; */
+		}
+
+		.text {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+		.text::first-line {
+			text-transform: uppercase;
+		}
+
+		.text::first-letter {
+			font-size: 3em;
+			border: 1px solid black;
+			background: red;
+			float: left;
+			padding: 2px;
+			margin-right: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="text">This is my very important paragraph.
+		I am a distinguished gentleman of such renown that my paragraph
+		needs to be styled in a manner befitting my majesty. Bow before
+		my splendour, dear students, and go forth and learn CSS!</p>
+	<p>This is my page</p>
+	<h1>Simple float example</h1>
+
+	<img src="https://mdn.mozillademos.org/files/13340/butterfly.jpg" alt="A pretty butterfly with red, white, and brown coloring, sitting on a large leaf">
+
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit
+		amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac
+		imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+</body>
+
 </html>

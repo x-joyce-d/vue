@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>控制继承</title>
+	<style media="screen">
+		body {
+			color: green;
+		}
+
+		.inherit a {
+			color: inherit;
+			/* 与父元素一样 */
+		}
+
+		.initial a {
+			color: initial
+			/* 与浏览器默认样式表中一样 */
+		}
+
+		.unset a {
+			color: unset;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li>Default <a href="#">link</a> color</li>
+		<li class="inherit">Inherit the <a href="#">link</a> color</li>
+		<li class="initial">Reset the <a href="#">link</a> color</li>
+		<li class="unset">Unset the <a href="#">link</a> color</li>
+	</ul>
+</body>
+
+</html>

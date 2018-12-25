@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>伪类</title>
+	<style>
+		/* 这些样式将在任何情况下应用于我们
+	的链接 */
+
+		a {
+			color: blue;
+			font-weight: bold;
+		}
+
+		/* 我们想让被访问过的链接和未被访问
+	的链接看起来一样 */
+
+		a:visited {
+			color: blue;
+		}
+
+		/* 当光标悬停于链接，键盘激活或锁定
+	链接时，我们让链接呈现高亮 */
+
+		a:hover,
+		a:active,
+		a:focus {
+			color: darkred;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a>
+</body>
+
+</html>
